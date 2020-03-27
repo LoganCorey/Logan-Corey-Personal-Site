@@ -1,0 +1,21 @@
+.filters{
+    width:100%;
+    display:flex; 
+    border-bottom:1px solid  #ccc;
+    justify-content:center;
+    align-items:center;
+}
+
+.projects{
+    background-color:rgba(204,204,204,0.4);
+    padding:13px;
+    display:flex;
+    align-items:center;
+}
+
+.projects p {
+    margin-left:40px;
+    margin-top:0px;
+    margin-bottom:0px;
+
+}

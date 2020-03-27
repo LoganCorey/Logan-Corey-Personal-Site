@@ -1,0 +1,46 @@
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)),
+    url("../../assets/images/about-header.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 420px;
+  background-attachment: fixed;
+  background-position: center center;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.header__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 420px;
+}
+.header {
+  position: relative;
+  margin-bottom: 5px;
+  color: white;
+  font-size: 3em;
+  font-weight: 300;
+}
+
+.subtitle {
+  margin-top: 5px;
+  position: relative;
+  color: white;
+  font-size: 1.3em;
+  font-weight: 100;
+}
+
+.container {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.light {
+  font-weight: 300;
+}

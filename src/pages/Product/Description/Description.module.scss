@@ -1,0 +1,43 @@
+@media only screen and (max-width: 600px) {
+  .root {
+    align-items: center;
+    justify-content: center;
+  }
+  .title,
+  .subtitle,
+  .description {
+    text-align: center;
+  }
+  .description {
+    width: 90% !important;
+  }
+}
+
+.root {
+  display: flex;
+  flex-direction: row;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 2%;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+.title {
+  font-weight: 300;
+  margin-top: 0px;
+}
+.subtitle {
+  font-weight: 300;
+}
+
+.description {
+  width: 60%;
+  margin-right: 5%;
+  box-sizing: border-box;
+}
+.specifications {
+  width: 40%;
+  box-sizing: border-box;
+  flex: 1;
+}

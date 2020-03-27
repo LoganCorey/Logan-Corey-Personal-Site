@@ -1,0 +1,86 @@
+.item {
+  text-align: center;
+  width:300px;
+  height:400px;
+  overflow:hidden;
+  cursor:pointer;
+  text-decoration:none !important;
+  transition:0.6s linear;
+  transform:translateY(0px);
+  animation:animation;
+  animation-duration:1s;
+  animation-timing-function:linear;
+  animation-iteration-count:1;
+  animation-fill-mode:forwards;
+
+}
+
+.item:hover{
+  transform:translateY(-20px);
+  transition:0.6s linear;
+}
+
+.item:visited{
+  color:black;
+  text-decoration:none;
+}
+
+
+.image{
+  height:auto;
+  width:100%;
+  max-width:200px;
+  object-fit:cover;
+
+}
+
+
+.title {
+  text-align: center;
+  text-decoration:none !important;
+  color:black;
+  font-size:1.5em;
+  width:100%;
+  margin:0px;
+  font-weight:300;
+
+}
+
+.title:visited{
+  text-decoration:none;
+  color:black;
+
+}
+
+.title:hover{
+color:green;
+transition:1s ease-in;
+}
+
+.subtitle{
+  font-weight:300;
+  text-decoration:none;
+  margin:0px;
+  margin-top:5px;
+}
+
+.subtitle:visited{
+  color:black;
+  color:black;
+}
+
+.remove{
+  transition:1s linear;
+  flex-grow:0.000001;
+}
+
+@keyframes animation{
+  0%{
+
+    opacity:0;
+  }
+
+  100%{
+opacity:1;
+  }
+}
