@@ -1,6 +1,6 @@
 # Logan-Corey
 
-My own personal website built with React, Redux, SCSS and Typescript!
+My own personal website built with React, Redux, SCSS and Typescript available at https://www.logancorey.ca!
 
 # About The Project
 
