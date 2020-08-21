@@ -1,0 +1,46 @@
+{
+    "projects": [
+      {
+        "description": "Caev is an online platform which allow its users to cater food. This platform was created using React (Typescript) and Redux for the frontend and NodeJS/MySql for the backend with hosting on AWS.  One of the most enjoyable parts of this project was being able to work with many talented developers and a stellar management team to craft an experience which solves the issues of catering food on campus or for local events.",
+        "languages": [
+          "NodeJS",
+          "MYSQL",
+          "ReactJS",
+          "HTML5",
+          "SCSS"
+        ],
+        "mainImage": "./images/caev/main.png",
+        "subtitle": "Cater to events",
+        "tags": [
+          "Web",
+          "Frontend",
+          "Backend",
+          "Database"
+        ],
+        "title": "Caev",
+        "github": "",
+        "website": "https://www.caev.ca"
+      },
+      {
+        "description": "Tired of waiting 40+ minutes to convert my a single power point file into an audio file one I decided to create a faster way.  Luckily, the audio from a pptx file is easily recoverable and Python had a library called PyDub which uses ffmpeg to combine the audio files into one made this project not as challenging.  In order to increase the challenge I decided to create this project as a web  app and in the process learend about dealing with files over the web and how to store / remove them from the server once the user got what they wanted.",
+        "languages": [
+          "Django",
+          "Python",
+          "ReactJS",
+          "HTML5",
+          "SCSS"
+        ],
+        "mainImage": "images/pptx_sound_extractor/main.png",
+        "path": "/projects/pptx_sound_extractor",
+        "subtitle": "Extract all audio from a power point",
+        "tags": [
+          "Web",
+          "Frontend",
+          "Backend"
+        ],
+        "title": "PPTX Sound Extractor",
+        "github":"https://github.com/LoganCorey/PowerPoint-Sound-Extractor",
+        "website": ""
+      }
+    ]
+  }

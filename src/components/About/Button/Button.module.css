@@ -1,0 +1,23 @@
+.button {
+    border: 1px solid #800E13;
+    padding: 8px;
+    color: #800E13;
+    font-size: 1.3em;
+    font-weight: 300;
+    background-color: Transparent;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width:200px;
+    text-align:center;
+    text-decoration:none;
+  }
+  
+  .button:hover {
+      box-shadow:inset 300px 0 0 0 #800E13;
+      color:white;
+    transition: 0.5s ease-in;
+  }
+  

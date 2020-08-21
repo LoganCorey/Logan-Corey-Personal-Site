@@ -1,0 +1,50 @@
+
+@media only screen and (max-width: 1400px) {
+  .skillsContainer {
+  grid-gap: 0px 50px!important;
+  }
+
+}
+
+@media only screen and (max-width: 1000px) {
+
+  .skillsContainer {
+    grid-template-columns:auto!important;
+    grid-gap: 30px 0px!important;
+  }
+}
+
+
+.root {
+  background-color: rgba(0, 0, 0, 0);
+
+}
+
+.skillsTitle {
+  color: #AD2831;
+  font-size: 4em;
+  margin: 0;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 20px;
+}
+.skillsSubtitle {
+  font-size: 1.7em;
+  font-weight: 300;
+  margin: 0;
+  text-align:center;
+}
+.skillsContainer {
+  margin-top:40px;
+    /*display:flex;
+  
+    align-items: center;
+    justify-content: center;
+    align-content:flex-start;*/
+    display:grid;
+    grid-template-columns: auto auto auto;
+    justify-content:center;
+    grid-gap:0px 140px;
+
+
+}

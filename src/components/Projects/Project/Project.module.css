@@ -1,0 +1,67 @@
+@media only screen and (max-width: 560px) {
+  .root {
+    width: 450px !important;
+  }
+}
+
+.root {
+  height: 400px;
+  width: 550px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 3px -2px,
+    rgba(0, 0, 0, 0.14) 0px 3px 4px 0px, rgba(0, 0, 0, 0.12) 0px 1px 8px 0px;
+  cursor: pointer;
+  overflow: hidden;
+  display: inline-block;
+  margin-top: 60px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-size: cover;
+  background-position: left;
+  background-color: white;
+  transition: 0.5s linear;
+  border-radius: 10px;
+  padding-bottom: 5px;
+}
+
+.root:hover {
+  transform: translateY(-25px);
+  transition: 0.5s linear;
+}
+
+.picture {
+  /* background-image: url("../../../images/caev/main.png");*/
+  background-size: cover;
+  background-position: left;
+  height: 320px;
+  background-color: white;
+  /*fill:black;*/
+}
+
+.projectTitle {
+  text-align: left;
+  margin-left: 10px;
+  margin-top: 10px;
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+
+.projectDescription {
+  height: 80px;
+}
+
+.projectTag {
+  background-color: #250902;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 5px;
+  border-radius: 10px;
+  color: white;
+  margin-top: 8px;
+  margin-bottom: 0px;
+  margin-left: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: 400;
+  text-transform: uppercase;
+  float: left;
+  font-size: 0.7em;
+}

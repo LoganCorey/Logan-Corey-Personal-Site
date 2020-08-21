@@ -1,6 +1,14 @@
-.container{
-  position:relative;
+html {
+  scroll-behavior: smooth;
+  overflow-x:hidden;
 }
+*{
+  color: #333;
+}
+.App {
+  text-align: center;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

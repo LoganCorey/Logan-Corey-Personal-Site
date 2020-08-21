@@ -1,72 +1,77 @@
 import React from "react";
-import { ReactComponent as Github } from "../../assets/images/github.svg";
-import { ReactComponent as Linkedin } from "../../assets/images/linkedin.svg";
-import { Link } from "react-router-dom";
-import classes from "./Footer.module.scss";
-
-export const Footer = () => {
+import { ReactComponent as Github } from "../../images/assets/github.svg";
+import { ReactComponent as Linkedin } from "../../images/assets/linkedin.svg";
+import {ReactComponent as Mail} from '../../images/assets/mail.svg'
+import classes from "./Footer.module.css";
+const Footer = () => {
   return (
-    <div className={classes.root}>
-      <div className={classes.logo}>
-        <h1> Logan Corey</h1>
-      </div>
+    <React.Fragment>
+      <footer className={classes.footer}>
+        <div className={classes.brand}>
+          <h2 className={classes.brandText}>Logan Corey</h2>
+        </div>
 
-      <div className={classes.content}>
-        <div className={classes.section}>
+        <div className={classes.linkSection}>
           <ul>
-            <ol>
+            <li>
               <h3>About</h3>
-            </ol>
-            <ol>
-              <Link to="/about" className={classes.link}>
-                <p>About Me</p>
-              </Link>
-            </ol>
-            <ol>
-              <Link to="/credits" className={classes.link}>
-                <p>Special Thanks</p>
-              </Link>
-            </ol>
+            </li>
+            <li>
+              <a href="#About" className={classes.link}>
+                About Me
+              </a>
+            </li>
+            <li>
+              <a href="#Projects" className={classes.link}>
+                Projects
+              </a>
+            </li>
+            <li>
+              <a href="#Skills" className={classes.link}>
+                Skills
+              </a>
+            </li>
           </ul>
         </div>
 
-        <div className={classes.section}>
+        <div className={classes.linkSection}>
           <ul>
-            <ol>
-              <h3>Projects</h3>
-            </ol>
-            <ol>
-              <Link to="/" className={classes.link}>
-                <p>View Projects</p>
-              </Link>
-            </ol>
-          </ul>
-        </div>
-
-        <div className={classes.section}>
-          <ul>
-            <ol>
+            <li>
               <h3>Contact</h3>
-            </ol>
-            <ol className={classes.line}>
+            </li>
+            <li>
               <a href="https://github.com/LoganCorey" className={classes.link}>
                 <Github className={classes.svgLogo} />
-                <p className={classes.text}>Github</p>
+                Github
               </a>
-            </ol>
-            <ol>
+            </li>
+            <li>
               <a
                 href="https://ca.linkedin.com/in/logan-corey"
                 className={classes.link}
               >
                 <Linkedin className={classes.svgLogo} />
-
-                <p className={classes.text}>Linkedin</p>
+                Linkedin
               </a>
-            </ol>
+              
+            </li>
+            <li>
+              <a
+                href="mailto:logan.corey@mail.utoronto.ca"
+                className={classes.link} 
+              >
+                <Mail className={classes.svgLogo} style={{width:'30px'}}/>
+                logan.corey@mail.utoronto.ca
+              </a>
+              
+            </li>
           </ul>
         </div>
-      </div>
+      </footer>
+    <div className={classes.bottom}>
+    <p >&#169; Logan Corey 2020</p>
     </div>
+    </React.Fragment>
   );
 };
+export default Footer;

@@ -1,80 +1,115 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import classes from "./Navigation.module.scss";
+import React, { useState } from "react";
+import classes from "./Navigation.module.css";
 
-export class Navigation extends React.Component<{}> {
-  private navRef: React.RefObject<any> = React.createRef();
-
-  state = {
-    stylesNavigation: {},
-    showFlair: true,
-    animation: classes.slideDownAnimation
+const Navigation = () => {
+  const [showMobileNav, setMobileNav] = useState(false);
+  const triggerMobileNav = () => {
+    setMobileNav(!showMobileNav);
   };
-
-  componentDidMount() {
-    window.addEventListener("scroll", this.handleScroll);
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener("scroll", this.handleScroll);
-  }
-
-  handleScroll = (e: Event) => {
-    const y: number = window.scrollY;
-    if (y > 150) {
-      this.setState({
-        ...this.state,
-        stylesNavigation: {
-          backgroundColor: "#111111",
-          transition: "0.5s linear"
-        },
-        showFlair: false,
-        animation: classes.slideUpAnimation
-      });
-    } else {
-      this.setState({
-        ...this.state,
-        stylesNavigation: {
-          backgroundColor: "transparent",
-          transition: "0.5s linear"
-        },
-        showFlair: true,
-        animation: classes.slideDownAnimation
-      });
-    }
-  };
-
-  render() {
-    return (
-      <React.Fragment>
-        <nav
-          className={classes.root + " " + this.state.animation}
-          ref={this.navRef}
-          style={this.state.stylesNavigation}
-        >
-          <div className={classes.flair}>
-            <h1 className={classes.name}>Logan Corey</h1>
-          </div>
-          <div className={classes.nav}>
-            <div className={classes.link}>
-              <Link className={classes.link} to="/">
-                Projects
-              </Link>
-            </div>
-            <div className={classes.link}>
-              <Link className={classes.link} to="/about">
-                {" "}
+  return (
+    <nav className={classes.nav}>
+      <div className={classes.logo}>
+        <a href="#About">Logan Corey</a>
+      </div>
+      <div className={classes.mainLinks}>
+        <ul className={classes.navLinks}>
+          <li>
+            <a href="#About">
+              About <span></span>
+              <span></span>{" "}
+            </a>
+          </li>
+          <li>
+            <a href="#Projects">
+              Projects <span></span>
+              <span></span>{" "}
+            </a>
+          </li>
+          <li>
+            <a href="#Skills">
+              Skills <span></span>
+              <span></span>{" "}
+            </a>
+          </li>
+          <li>
+            <a href="#Contact">
+              Contact <span></span>
+              <span></span>{" "}
+            </a>
+          </li>
+        </ul>
+      </div>
+      <span className={classes.icon} onClick={triggerMobileNav}>
+        <i></i>
+        <i></i>
+        <i></i>
+      </span>
+      {showMobileNav ? (
+        <div className={classes.mobileLinks}>
+          <ul className={classes.mobileNavLinks}>
+            <li className={classes.mobileLink}>
+              <a href="#About" onClick={triggerMobileNav}>
                 About
-              </Link>
-            </div>{" "}
-            <div className={classes.link}>
-              <Link className={classes.link} to="/contact">
+              </a>
+              <span></span>
+              <span></span>
+            </li>
+            <li className={classes.mobileLink}>
+              <a href="#Projects" onClick={triggerMobileNav}>
+                Projects
+              </a>
+            </li>
+            <li className={classes.mobileLink}>
+              <a href="#Skills" onClick={triggerMobileNav}>
+                Skills
+              </a>
+            </li>
+            <li className={classes.mobileLink}>
+              <a href="#Contact" onClick={triggerMobileNav}>
                 Contact
-              </Link>
-            </div>
-          </div>
-        </nav>
-      </React.Fragment>
-    );
-  }
-}
+              </a>
+            </li>
+          </ul>
+        </div>
+      ) : null}
+    </nav>
+  );
+};
+
+export default Navigation;
+
+/*
+ <div className={classes.root}>
+      <div className={classes.flair}>
+        <a href="#About" className={classes.link}>
+          Logan Corey
+        </a>
+      </div>
+      <div className={classes.links}>
+        <ul>
+          <li style={{float:'right'}}>
+            <a href="#About" className={classes.link}>
+              About Me
+              <span></span>
+              <span></span>{" "}
+            </a>
+          </li>
+          <li style={{float:'right'}}>
+            {" "}
+            <a href="#Projects" className={classes.link}>
+              Projects <span></span>
+              <span></span>
+            </a>
+          </li>
+          <li style={{float:'right'}}>
+            <a href="#Contact" style={{float:'right'}} className={classes.link}>
+              {" "}
+              Contact <span></span>
+              <span></span>
+            </a>{" "}
+          </li>
+        </ul>
+      </div>
+    </div>
+
+*/
