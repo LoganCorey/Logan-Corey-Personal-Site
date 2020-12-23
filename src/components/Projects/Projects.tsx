@@ -33,7 +33,7 @@ const Projects = () => {
                 <FadeInSection>
                 <Project
                   title={project.title}
-                  tags={project.tags}
+                  tags={project.tags.sort()}
                   image={project.mainImage}
                 />
                 </FadeInSection>
