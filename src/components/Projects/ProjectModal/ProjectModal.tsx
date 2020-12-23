@@ -53,12 +53,12 @@ const ProjectModal = (props: ProjectModalProps) => {
               <div className={classes.description}>
                 <p style={{ textAlign: "left" }}>{project.description}</p>
 
-                <h3 style={{ fontWeight: 300, textAlign: "left" }}>
+                {props.project.website === ""  && props.project.github === "" ? null :<h3 style={{ fontWeight: 300, textAlign: "left" }}>
                   Check it out
-                </h3>
+                </h3>}
                 <div className={classes.inline}>
                   {project.github === "" ? null : (
-                    <a href={project.github} className={classes.iconText}>
+                    <a href={project.github} className={classes.iconText} target="_blank" rel="noopener noreferrer">
                       <Github
                         className={classes.icon}
                         style={{
@@ -72,7 +72,7 @@ const ProjectModal = (props: ProjectModalProps) => {
                   )}
 
                   {project.website === "" ? null : (
-                    <a href={project.website} className={classes.iconText}>
+                    <a href={project.website} className={classes.iconText} target="_blank" rel="noopener noreferrer">
                       <Web
                         className={classes.icon}
                         style={{
