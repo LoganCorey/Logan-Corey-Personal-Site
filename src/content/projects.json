@@ -19,7 +19,7 @@
         ],
         "title": "Caev",
         "github": "",
-        "website": "https://www.caev.ca"
+        "website": ""
       },
       {
         "description": "Tired of waiting 40+ minutes to convert my a single power point file into an audio file one I decided to create a faster way.  Luckily, the audio from a pptx file is easily recoverable and Python had a library called PyDub which uses ffmpeg to combine the audio files into one made this project not as challenging.  In order to increase the challenge I decided to create this project as a web  app and in the process learend about dealing with files over the web and how to store / remove them from the server once the user got what they wanted.",
@@ -40,6 +40,54 @@
         ],
         "title": "PPTX Sound Extractor",
         "github":"https://github.com/LoganCorey/PowerPoint-Sound-Extractor",
+        "website": ""
+      },
+      {
+        "description": "Retrieve information on Toronto's Public Health's food safety program that inspects all establishments serving and preparing food.",
+        "languages": [
+          "Spring Boot",
+          "Java",
+          "Maven",
+          "HTML5",
+          "CSS"
+        ],
+        "mainImage": "images/dinesafe/main.png",
+        "path": "/projects/dinesafe",
+        "subtitle": "Retrieve information on Toronto's Public Health's food safety program.",
+        "tags": [
+          "Web",
+          "Frontend",
+          "Backend",
+          "API",
+          "Heroku",
+          "Hosted"
+        ],
+        "title": "WatchTower Comics",
+        "github":"https://github.com/LoganCorey/DineSafe-api",
+        "website": "https://logancorey.github.io/DineSafe-api/"
+      },
+      {
+        "description": "Track your comic book collection in a self managed NodejS and Electron solution.",
+        "languages": [
+          "Electron",
+          "NodeJs",
+          "Typescript",
+          "VueJs",
+          "HTML5",
+          "CSS"
+        ],
+        "mainImage": "images/watchtower/main.png",
+        "path": "/projects/watchtower",
+        "subtitle": "Track your comic book collection.",
+        "tags": [
+          "Web",
+          "Frontend",
+          "Backend",
+          "API"
+
+        ],
+        "title": "WatchTower Comics",
+        "github":"https://github.com/LoganCorey/Watch-Tower-Comics",
         "website": ""
       }
     ]
